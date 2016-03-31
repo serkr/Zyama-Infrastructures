@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NAME!!!</title>
+</head>
+<body>
+<table border="1" cellspacing="1" cellpadding="5" width="100%">
+
+<tr>
+<td style="background-color:#ffffcc">Назва</td> 
+<td style="background-color:#ffffcc">Адреса</td>
+<td style="background-color:#ffffcc">Чи працює</td>
+<td style="background-color:#ffffcc">Коментар</td>
+</tr>
+
+{% for n in stru %}
+<tr> 
+<td>{{n.name}}</td> 
+<td>{{n.adress}}</td>
+<td>{{ n.readable_work_status }}</td>
+<td>{{n.comment}}</td>
+</tr>
+{% endfor %}
+</body>
+</html>
+
