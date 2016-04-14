@@ -20,7 +20,8 @@ class Structure(models.Model):
     work_status = models.NullBooleanField(choices = c)
     comment = models.CharField(max_length=200)
     category = models.ForeignKey(Category)
-    
+    def __unicode__(self):
+        return self.name
     
     
     @property    

@@ -4,6 +4,8 @@
 	<title>NAME!!!</title>
 </head>
 <body>
+<h3><a href="/structures/edit/">Додати об'єкт</a></h3>
+
 <table border="1" cellspacing="1" cellpadding="5" width="100%">
 
 <tr>
@@ -11,6 +13,7 @@
 <td style="background-color:#ffffcc">Адреса</td>
 <td style="background-color:#ffffcc">Чи працює</td>
 <td style="background-color:#ffffcc">Коментар</td>
+<td style="background-color:#ffffcc">Редагувати</td>
 </tr>
 
 {% for n in stru %}
@@ -19,6 +22,7 @@
 <td>{{n.adress}}</td>
 <td>{{ n.readable_work_status }}</td>
 <td>{{n.comment}}</td>
+<td><a href="/structures/edit/{{n.id}}">Редагувати</a></td>
 </tr>
 {% endfor %}
 </body>
